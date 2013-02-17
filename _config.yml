@@ -74,6 +74,7 @@ googleplus_hidden: false
 
 # Google Analytics
 google_analytics_tracking_id: UA-177343-17
+google_analytics_domain: ktsugita.github.com
 
 # Facebook Like
 facebook_like: false
