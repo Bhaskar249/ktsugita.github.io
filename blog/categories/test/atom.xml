@@ -4,7 +4,7 @@
   <title><![CDATA[Category: test | ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-17T20:42:26+09:00</updated>
+  <updated>2013-02-17T20:48:14+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -14,13 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[1st Test Entry]]></title>
+    <title type="html"><![CDATA[最初の投稿テスト]]></title>
     <link href="http://ktsugita.github.com/blog/2013/02/17/1st-test-entry/"/>
     <updated>2013-02-17T15:24:00+09:00</updated>
     <id>http://ktsugita.github.com/blog/2013/02/17/1st-test-entry</id>
-    <content type="html"><![CDATA[<h1>最初の投稿テスト</h1>
-
-<h2>ミゾソバ</h2>
+    <content type="html"><![CDATA[<h2>ミゾソバ</h2>
 
 <p><img src="https://lh5.googleusercontent.com/-GvV_JzeFzQE/UQyVOpfXYQI/AAAAAAACIjo/W_XcyQjVrd0/s902/20120929-_DSC3217-2.jpg"></p>
 ]]></content>
