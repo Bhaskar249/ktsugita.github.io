@@ -77,4 +77,7 @@ google_analytics_tracking_id: UA-177343-17
 google_analytics_domain: ktsugita.github.com
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
+facebook_locale: ja_JP
+facebook_app_id: 476749035718514
+facebook_comments: true
