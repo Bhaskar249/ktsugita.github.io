@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ためしてみる@Github Pages]]></title>
-  <link href="http://ktsugita.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Github | ためしてみる@Github Pages]]></title>
+  <link href="http://ktsugita.github.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
   <updated>2013-02-17T23:38:22+09:00</updated>
   <id>http://ktsugita.github.com/</id>
@@ -19,17 +19,6 @@
     <updated>2013-02-17T22:25:00+09:00</updated>
     <id>http://ktsugita.github.com/blog/2013/02/17/octopress1</id>
     <content type="html"><![CDATA[<h2>気がついたら<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>が流行ってるみたいなのでためしてみる</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[最初の投稿テスト]]></title>
-    <link href="http://ktsugita.github.com/blog/2013/02/17/1st-test-entry/"/>
-    <updated>2013-02-17T15:24:00+09:00</updated>
-    <id>http://ktsugita.github.com/blog/2013/02/17/1st-test-entry</id>
-    <content type="html"><![CDATA[<h2>ミゾソバ</h2>
-
-<p><img src="https://lh5.googleusercontent.com/-GvV_JzeFzQE/UQyVOpfXYQI/AAAAAAACIjo/W_XcyQjVrd0/s902/20120929-_DSC3217-2.jpg"></p>
 ]]></content>
   </entry>
   
