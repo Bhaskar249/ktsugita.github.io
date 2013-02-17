@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
+url: http://ktsugita.github.com
 title: My Octopress Blog
 subtitle: A blogging framework for hackers.
-author: Your Name
+author: ktsugita
 simple_search: http://google.com/search
 description:
 
@@ -72,12 +72,12 @@ twitter_show_follower_count: false
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:
+googleplus_user: 110962229729572343635
 googleplus_hidden: false
 
 # Pinboard
@@ -93,7 +93,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-177343-17
 
 # Facebook Like
 facebook_like: false
