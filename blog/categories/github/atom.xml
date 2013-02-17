@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-17T23:38:22+09:00</updated>
+  <updated>2013-02-17T23:41:52+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -18,7 +18,9 @@
     <link href="http://ktsugita.github.com/blog/2013/02/17/octopress1/"/>
     <updated>2013-02-17T22:25:00+09:00</updated>
     <id>http://ktsugita.github.com/blog/2013/02/17/octopress1</id>
-    <content type="html"><![CDATA[<h2>気がついたら<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>が流行ってるみたいなのでためしてみる</h2>
+    <content type="html"><![CDATA[<p><img class="left" src="http://s3-ap-northeast-1.amazonaws.com/ktsugita.github.com/images/octopress.png"></p>
+
+<h2>気がついたら<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>が流行ってるみたいなのでためしてみる</h2>
 ]]></content>
   </entry>
   
