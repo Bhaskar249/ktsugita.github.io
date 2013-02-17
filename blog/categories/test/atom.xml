@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: test | My Octopress Blog]]></title>
+  <title><![CDATA[Category: test | ためしてみる@GithubPages]]></title>
   <link href="http://ktsugita.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-17T16:11:19+09:00</updated>
+  <updated>2013-02-17T16:35:19+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
