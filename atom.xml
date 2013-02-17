@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ktsugita.github.com/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-17T15:32:06+09:00</updated>
+  <updated>2013-02-17T15:42:12+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -20,15 +20,9 @@
     <id>http://ktsugita.github.com/blog/2013/02/17/1st-test-entry</id>
     <content type="html"><![CDATA[<h1>最初の投稿テスト</h1>
 
-<ul>
-<li>ミゾソバ
+<h2>ミゾソバ</h2>
 
-<ul>
-<li><img src="https://lh5.googleusercontent.com/-GvV_JzeFzQE/UQyVOpfXYQI/AAAAAAACIjo/W_XcyQjVrd0/s902/20120929-_DSC3217-2.jpg"></li>
-</ul>
-</li>
-</ul>
-
+<p><img src="https://lh5.googleusercontent.com/-GvV_JzeFzQE/UQyVOpfXYQI/AAAAAAACIjo/W_XcyQjVrd0/s902/20120929-_DSC3217-2.jpg"></p>
 ]]></content>
   </entry>
   
