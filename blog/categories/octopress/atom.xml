@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-18T00:57:30+09:00</updated>
+  <updated>2013-02-18T00:58:38+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -30,8 +30,7 @@
 
 <p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。<a href="https://github.com/" title="Github">Github</a>にログインして <code>ユーザ名.github.com</code> という名前のリポジトリを作成する。ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname</code>から見えるようになる。</p>
 
-<pre><code>
-$ git clone https://github.com/imathis/octopress.git ktsugita.github.com
+<pre><code>$ git clone https://github.com/imathis/octopress.git ktsugita.github.com
 $ cd ktsugita.github.com
 $ sudo gem install bundler
 $ sudo bundle install
@@ -47,8 +46,7 @@ $ rake deploy
 この時点で<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>を展開したフォルダが<code>master</code>ブランチから<code>source</code>ブランチに変わっている。
 そのままリポジトリにコミットしておこう。</p>
 
-<pre><code>
-$ git add .
+<pre><code>$ git add .
 $ git commit -m 'Initial commit'
 $ git push -u origin source
 </code></pre>
