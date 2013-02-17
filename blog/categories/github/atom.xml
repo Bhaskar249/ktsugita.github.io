@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-18T00:18:09+09:00</updated>
+  <updated>2013-02-18T00:39:36+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -28,11 +28,25 @@
 デプロイ先は最もお手軽感のある<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>にした。
 ただし、<a href="https://github.com/" title="Github">Github</a>に画像とか置くと容量が気になるので画像は<a href="http://aws.amazon.com/jp/s3/" title="Amazon S3 (クラウドストレージサービス Amazon Simple Storage Service)">S3</a>に置くことにした。</p>
 
+<p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作るが、忘れる程前に作ったテストページ用のリポジトリがあったので削除して作りなおした。<a href="https://github.com/" title="Github">Github</a>にログインして ユーザ名.github.com という名前のリポジトリを作成する。ちなみに、masterブランチにファイルを置くとhttp://ユーザ名.github.com/から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。プロジェクトの場合はgh-pagesというブランチにファイルを置くとhttp://ユーザ名.github.com/projectnameから見えるようになる。</p>
+
+<p> $ git clone https://github.com/imathis/octopress.git ktsugita.github.com
+ $ cd ktsugita.github.com
+ $ sudo gem install bundler
+ $ sudo bundle install
+ $ rake install
+ $ rake setup_github_pages
+ Enter the read/write url for your repository: git@github.com:ktsugita/ktsugita.github.com.git
+ $ rake generate
+ $ rake deploy</p>
+
+<p>ここまでエラー無しなら http://ktsugita.github.com にサイトが出来上がっているはず。</p>
+
 <h2>参考にしたサイト</h2>
 
 <ul>
-<li><a href="http://blog.glidenote.com/blog/2011/11/07/install-octopress-on-github/">GithubとOctopressでモダンな技術系ブログを作ってみる</a></li>
-<li><a href="http://blog.2310.net/archives/6">Markdown文法の全訳</a></li>
+<li><a href="http://blog.glidenote.com/blog/2011/11/07/install-octopress-on-github/" title="Glide Note">GithubとOctopressでモダンな技術系ブログを作ってみる</a></li>
+<li><a href="http://blog.2310.net/archives/6" title="blog::2310">Markdown文法の全訳</a></li>
 </ul>
 
 ]]></content>
