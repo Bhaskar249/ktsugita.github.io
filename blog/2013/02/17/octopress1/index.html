@@ -122,7 +122,7 @@ $(document).ready( function () {
 
 <p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作るが、忘れる程前に作ったテストページ用のリポジトリがあったので削除して作りなおした。<a href="https://github.com/" title="Github">Github</a>にログインして <code>ユーザ名.github.com</code> という名前のリポジトリを作成する。ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname</code>から見えるようになる。</p>
 
-<p><code>
+<pre><code>
  $ git clone https://github.com/imathis/octopress.git ktsugita.github.com
  $ cd ktsugita.github.com
  $ sudo gem install bundler
@@ -132,7 +132,8 @@ $(document).ready( function () {
  Enter the read/write url for your repository: git@github.com:ktsugita/ktsugita.github.com.git
  $ rake generate
  $ rake deploy
-</code></p>
+</code></pre>
+
 
 <p>ここまでエラー無しなら<code>http://ktsugita.github.com</code>にサイトが出来上がっているはず。</p>
 
