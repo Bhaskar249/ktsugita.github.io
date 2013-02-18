@@ -53,6 +53,9 @@ blog_index_asides:
 post_asides:
 page_asides:
 
+category_dir: blog/categories
+category_title_prefix: "Category: "
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
