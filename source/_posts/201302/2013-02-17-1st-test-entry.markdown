@@ -8,7 +8,7 @@ sharing: true
 footer: true
 published: true
 keywords:
-ogp_image:
+ogp_image: http://www.gravatar.com/avatar/73f037c32fa521e38713a248927b4051
 ---
 
 ミゾソバ
