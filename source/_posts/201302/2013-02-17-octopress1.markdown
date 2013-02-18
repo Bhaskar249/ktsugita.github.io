@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Octopressをためしてみる(1)"
+title: Octopressをためしてみる
 date: 2013-02-17 22:25
 comments: false
 categories: [Octopress, Github]
@@ -20,7 +20,10 @@ ogp_image: http://s3-ap-northeast-1.amazonaws.com/ktsugita.github.com/images/oct
 デプロイ先は最もお手軽感のある[Github Pages]にした。
 ただし、[Github]に画像とか置くと容量が気になるので画像は[S3]に置くことにした。
 
-まずはデプロイ先の[Github Pages]用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。[Github]にログインして `ユーザ名.github.com`という名前のリポジトリを作成する。ちなみに、`master`ブランチにファイルを置くと`http://ユーザ名.github.com/`から見えるというのが[Github Pages]のしくみ。プロジェクトの場合は`gh-pages`というブランチにファイルを置くと`http://ユーザ名.github.com/projectname/`から見えるようになる。
+まずはデプロイ先の[Github Pages]用のリポジトリを作る。
+[Github]にログインして `ユーザ名.github.com`という名前のリポジトリを作成する。
+ちなみに、`master`ブランチにファイルを置くと`http://ユーザ名.github.com/`から見えるというのが[Github Pages]のしくみ。
+プロジェクトの場合は`gh-pages`というブランチにファイルを置くと`http://ユーザ名.github.com/projectname/`から見えるようになる。
 
 {% codeblock lang:bash %}
 $ git clone https://github.com/imathis/octopress.git ktsugita.github.com
@@ -44,10 +47,50 @@ $ git commit -m 'Initial commit'
 $ git push -u origin source
 {% endcodeblock %}
 
+基本的なサイト設定は`_config.yml`を編集する
+
+{% codeblock lang:yml %}
+url: http://ktsugita.github.com
+title: ためしてみる@Github Pages
+subtitle: ためしためされ43年。Github Pages+Octopressでためされます。
+author: ktsugita
+{% endcodeblock %}
+
+新しいエントリを書くときは`rake new_post['タイトル']`。タイトル部分はURLの一部になるので意識してつける。
+実際のタイトルは作成したファイル内に記述できる。
+
+{% codeblock lang:yml %}
+---
+layout: post
+title: "Octopressをためしてみる"
+date: 2013-02-17 22:25
+comments: false
+categories: [Octopress, Github]
+sharing: true
+footer: true
+keywords: [Octopress, Github]
+---
+{% endcodeblock %}
+
+エントリを書き終えたら生成してデプロイする。
+
+{% codeblock lang:bash %}
+$ rake generate
+$ rake deploy
+{% endcodeblock %}
+
+まとめて実行するには次のタスクを実行する。
+
+{% codeblock lang:bash %}
+$ rake gen_deploy
+{% endcodeblock %}
+
+
 参考にしたサイト・ページ
 --------
 * [Octopress]
 * [GithubとOctopressでモダンな技術系ブログを作ってみる](http://blog.glidenote.com/blog/2011/11/07/install-octopress-on-github/ "Glide Note")
+* [Octopressの気になるところを修正してみた](http://www.sankitch.me/blog/2012/05/09/octopress-customize/ "M-x sankitch-info")
 * [Markdown文法の全訳](http://blog.2310.net/archives/6 "blog::2310")
 
 [Octopress]: http://octopress.org/ "Octopress: A blogging framework for hackers."
