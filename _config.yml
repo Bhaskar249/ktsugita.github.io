@@ -84,3 +84,5 @@ facebook_like: true
 facebook_locale: ja_JP
 facebook_app_id: 476749035718514
 facebook_comments: true
+default_ogp_image: http://www.gravatar.com/avatar/73f037c32fa521e38713a248927b4051
+
