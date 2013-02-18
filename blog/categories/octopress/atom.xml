@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-18T13:18:22+09:00</updated>
+  <updated>2013-02-18T13:29:47+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -30,27 +30,37 @@
 
 <p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。<a href="https://github.com/" title="Github">Github</a>にログインして <code>ユーザ名.github.com</code>という名前のリポジトリを作成する。ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname/</code>から見えるようになる。</p>
 
-<p><code>bash
-$ git clone https://github.com/imathis/octopress.git ktsugita.github.com
-$ cd ktsugita.github.com
-$ sudo gem install bundler
-$ sudo bundle install
-$ rake install
-$ rake setup_github_pages
-Enter the read/write url for your repository: git@github.com:ktsugita/ktsugita.github.com.git
-$ rake generate
-$ rake deploy
-</code></p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git clone https://github.com/imathis/octopress.git ktsugita.github.com
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>ktsugita.github.com
+</span><span class='line'><span class="nv">$ </span>sudo gem install bundler
+</span><span class='line'><span class="nv">$ </span>sudo bundle install
+</span><span class='line'><span class="nv">$ </span>rake install
+</span><span class='line'><span class="nv">$ </span>rake setup_github_pages
+</span><span class='line'>Enter the <span class="nb">read</span>/write url <span class="k">for </span>your repository: git@github.com:ktsugita/ktsugita.github.com.git
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>ここまでエラー無しなら<code>http://ktsugita.github.com</code>にサイトが出来上がっているはず。
 この時点で<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>を展開したフォルダが<code>master</code>ブランチから<code>source</code>ブランチに変わっている。
 そのままリポジトリにコミットしておこう。</p>
 
-<p><code>bash
-$ git add .
-$ git commit -m 'Initial commit'
-$ git push -u origin source
-</code></p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git add .
+</span><span class='line'><span class="nv">$ </span>git commit -m <span class="s1">&#39;Initial commit&#39;</span>
+</span><span class='line'><span class="nv">$ </span>git push -u origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>参考にしたサイト</h2>
 
