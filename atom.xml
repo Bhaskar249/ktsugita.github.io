@@ -4,7 +4,7 @@
   <title><![CDATA[ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-18T13:38:15+09:00</updated>
+  <updated>2013-02-18T23:53:42+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopressをためしてみる(1)]]></title>
+    <title type="html"><![CDATA[Octopressをためしてみる]]></title>
     <link href="http://ktsugita.github.com/blog/2013/02/17/octopress1/"/>
     <updated>2013-02-17T22:25:00+09:00</updated>
     <id>http://ktsugita.github.com/blog/2013/02/17/octopress1</id>
@@ -28,7 +28,10 @@
 デプロイ先は最もお手軽感のある<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>にした。
 ただし、<a href="https://github.com/" title="Github">Github</a>に画像とか置くと容量が気になるので画像は<a href="http://aws.amazon.com/jp/s3/" title="Amazon S3 (クラウドストレージサービス Amazon Simple Storage Service)">S3</a>に置くことにした。</p>
 
-<p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。<a href="https://github.com/" title="Github">Github</a>にログインして <code>ユーザ名.github.com</code>という名前のリポジトリを作成する。ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname/</code>から見えるようになる。</p>
+<p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作る。
+<a href="https://github.com/" title="Github">Github</a>にログインして <code>ユーザ名.github.com</code>という名前のリポジトリを作成する。
+ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。
+プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname/</code>から見えるようになる。</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -64,11 +67,67 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>基本的なサイト設定は<code>_config.yml</code>を編集する</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://ktsugita.github.com</span>
+</span><span class='line'><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">ためしてみる@Github Pages</span>
+</span><span class='line'><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">ためしためされ43年。Github Pages+Octopressでためされます。</span>
+</span><span class='line'><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">ktsugita</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>新しいエントリを書くときは<code>rake new_post['タイトル']</code>。タイトル部分はURLの一部になるので意識してつける。
+実際のタイトルは作成したファイル内に記述できる。</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="nn">---</span>
+</span><span class='line'><span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">post</span>
+</span><span class='line'><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="s">&quot;Octopressをためしてみる&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">date</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">2013-02-17 22:25</span>
+</span><span class='line'><span class="l-Scalar-Plain">comments</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span>
+</span><span class='line'><span class="l-Scalar-Plain">categories</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">Octopress</span><span class="p-Indicator">,</span> <span class="nv">Github</span><span class="p-Indicator">]</span>
+</span><span class='line'><span class="l-Scalar-Plain">sharing</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
+</span><span class='line'><span class="l-Scalar-Plain">footer</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
+</span><span class='line'><span class="l-Scalar-Plain">keywords</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">Octopress</span><span class="p-Indicator">,</span> <span class="nv">Github</span><span class="p-Indicator">]</span>
+</span><span class='line'><span class="nn">---</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>エントリを書き終えたら生成してデプロイする。</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>まとめて実行するには次のタスクを実行する。</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake gen_deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
 <h2>参考にしたサイト・ページ</h2>
 
 <ul>
 <li><a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a></li>
 <li><a href="http://blog.glidenote.com/blog/2011/11/07/install-octopress-on-github/" title="Glide Note">GithubとOctopressでモダンな技術系ブログを作ってみる</a></li>
+<li><a href="http://www.sankitch.me/blog/2012/05/09/octopress-customize/" title="M-x sankitch-info">Octopressの気になるところを修正してみた</a></li>
 <li><a href="http://blog.2310.net/archives/6" title="blog::2310">Markdown文法の全訳</a></li>
 </ul>
 
