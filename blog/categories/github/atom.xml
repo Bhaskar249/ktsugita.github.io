@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-18T12:45:36+09:00</updated>
+  <updated>2013-02-18T12:55:38+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -28,7 +28,7 @@
 デプロイ先は最もお手軽感のある<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>にした。
 ただし、<a href="https://github.com/" title="Github">Github</a>に画像とか置くと容量が気になるので画像は<a href="http://aws.amazon.com/jp/s3/" title="Amazon S3 (クラウドストレージサービス Amazon Simple Storage Service)">S3</a>に置くことにした。</p>
 
-<p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。<a href="https://github.com/" title="Github">Github</a>にログインして <code>ユーザ名.github.com</code> という名前のリポジトリを作成する。ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname</code>から見えるようになる。</p>
+<p>まずはデプロイ先の<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。<a href="https://github.com/" title="Github">Github</a>にログインして <code>ユーザ名.github.com</code>という名前のリポジトリを作成する。ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが<a href="http://pages.github.com/" title="Github Pages">Github Pages</a>のしくみ。プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname/</code>から見えるようになる。</p>
 
 <pre><code>$ git clone https://github.com/imathis/octopress.git ktsugita.github.com
 $ cd ktsugita.github.com
