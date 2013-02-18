@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://ktsugita.github.com/blog/2013/02/17/1st-test-entry/</loc>
-        <lastmod>2013-02-19T00:10:55+09:00</lastmod>
+        <lastmod>2013-02-19T00:13:17+09:00</lastmod>
     </url>
     <url>
         <loc>http://ktsugita.github.com/blog/2013/02/17/octopress1/</loc>
@@ -10,7 +10,7 @@
     </url>
     <url>
         <loc>http://ktsugita.github.com/blog/archives/</loc>
-        <lastmod>2013-02-19T00:10:55+09:00</lastmod>
+        <lastmod>2013-02-19T00:13:17+09:00</lastmod>
     </url>
     <url>
         <loc>http://ktsugita.github.com/robots.txt</loc>
@@ -22,6 +22,6 @@
     </url>
     <url>
         <loc>http://ktsugita.github.com/</loc>
-        <lastmod>2013-02-19T00:10:55+09:00</lastmod>
+        <lastmod>2013-02-19T00:13:17+09:00</lastmod>
     </url>
 </urlset>
