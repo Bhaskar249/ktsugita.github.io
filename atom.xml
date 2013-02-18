@@ -4,7 +4,7 @@
   <title><![CDATA[ためしてみる@Github Pages]]></title>
   <link href="http://ktsugita.github.com/atom.xml" rel="self"/>
   <link href="http://ktsugita.github.com/"/>
-  <updated>2013-02-18T13:35:59+09:00</updated>
+  <updated>2013-02-18T13:38:15+09:00</updated>
   <id>http://ktsugita.github.com/</id>
   <author>
     <name><![CDATA[ktsugita]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<h2>気がついたら<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>が流行ってるみたいなのでためしてみる</h2>
 
 <p><img class="right" src="http://s3-ap-northeast-1.amazonaws.com/ktsugita.github.com/images/octopress.png">
-<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>が何かとか入れ方とかは検索するとたくさん出てくるので省略。
+<a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>とは何？とかインストールの方法とかは検索するとたくさん出てくるので省略。
 自分用のメモとしてインストール手順と参考にしたページを残しておく。</p>
 
 <p><a href="http://octopress.org/" title="Octopress: A blogging framework for hackers.">Octopress</a>自体は<a href="http://aws.amazon.com/jp/" title="アマゾン ウェブ サービス（AWS 日本語）">AWS</a>上の<a href="http://www.ubuntu.com/" title="Ubuntu">Ubuntu</a>に構築、
