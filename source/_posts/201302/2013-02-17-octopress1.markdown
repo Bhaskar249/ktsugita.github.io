@@ -13,16 +13,17 @@ ogp_image: http://s3-ap-northeast-1.amazonaws.com/ktsugita.github.com/images/oct
 気がついたら[Octopress]が流行ってるみたいなのでためしてみる
 --------
 {% img right http://s3-ap-northeast-1.amazonaws.com/ktsugita.github.com/images/octopress.png %}
-[Octopress]が何かとか入れ方とかは検索するとたくさん出てくるので省略。
+[Octopress]とは何？とかインストールの方法とかは検索するとたくさん出てくるので省略。
 自分用のメモとしてインストール手順と参考にしたページを残しておく。
 
 [Octopress]自体は[AWS]上の[Ubuntu]に構築、
 デプロイ先は最もお手軽感のある[Github Pages]にした。
 ただし、[Github]に画像とか置くと容量が気になるので画像は[S3]に置くことにした。
 
-まずはデプロイ先の[Github Pages]用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。[Github]にログインして <code>ユーザ名.github.com</code> という名前のリポジトリを作成する。ちなみに、<code>master</code>ブランチにファイルを置くと<code>http://ユーザ名.github.com/</code>から見えるというのが[Github Pages]のしくみ。プロジェクトの場合は<code>gh-pages</code>というブランチにファイルを置くと<code>http://ユーザ名.github.com/projectname</code>から見えるようになる。
+まずはデプロイ先の[Github Pages]用のリポジトリを作るが、忘れる程前に作ったテストのリポジトリがあったので削除して作りなおした。[Github]にログインして `ユーザ名.github.com`という名前のリポジトリを作成する。ちなみに、`master`ブランチにファイルを置くと`http://ユーザ名.github.com/`から見えるというのが[Github Pages]のしくみ。プロジェクトの場合は`gh-pages`というブランチにファイルを置くと`http://ユーザ名.github.com/projectname/`から見えるようになる。
 
-<pre><code>$ git clone https://github.com/imathis/octopress.git ktsugita.github.com
+{% codeblock lang:bash %}
+$ git clone https://github.com/imathis/octopress.git ktsugita.github.com
 $ cd ktsugita.github.com
 $ sudo gem install bundler
 $ sudo bundle install
@@ -31,19 +32,21 @@ $ rake setup_github_pages
 Enter the read/write url for your repository: git@github.com:ktsugita/ktsugita.github.com.git
 $ rake generate
 $ rake deploy
-</code></pre>
+{% endcodeblock %}
 
-ここまでエラー無しなら<code>http://ktsugita.github.com</code>にサイトが出来上がっているはず。
-この時点で[Octopress]を展開したフォルダが<code>master</code>ブランチから<code>source</code>ブランチに変わっている。
+ここまでエラー無しなら`http://ktsugita.github.com`にサイトが出来上がっているはず。
+この時点で[Octopress]を展開したフォルダが`master`ブランチから`source`ブランチに変わっている。
 そのままリポジトリにコミットしておこう。
 
-<pre><code>$ git add .
+{% codeblock lang:bash %}
+$ git add .
 $ git commit -m 'Initial commit'
 $ git push -u origin source
-</code></pre>
+{% endcodeblock %}
 
-参考にしたサイト
+参考にしたサイト・ページ
 --------
+* [Octopress]
 * [GithubとOctopressでモダンな技術系ブログを作ってみる](http://blog.glidenote.com/blog/2011/11/07/install-octopress-on-github/ "Glide Note")
 * [Markdown文法の全訳](http://blog.2310.net/archives/6 "blog::2310")
 
